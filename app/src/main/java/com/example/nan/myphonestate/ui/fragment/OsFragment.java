@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 import com.example.nan.myphonestate.R;
 import com.example.nan.myphonestate.adapter.SimpleAdapter;
 import com.example.nan.myphonestate.hardware.Hardware_OS;
-import com.example.nan.myphonestate.hardware.Hardware_Phone;
 import com.example.nan.myphonestate.model.SimpleKVmodel;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
@@ -66,7 +65,7 @@ public class OsFragment extends Fragment {
         items=new ArrayList<>();
 
         Hardware_OS os=new Hardware_OS(getActivity().getApplicationContext());
-        items.add(new SimpleKVmodel(os.OS_BASE_OS,os.getBaseOS()));
+//        items.add(new SimpleKVmodel(os.OS_BASE_OS,os.getBaseOS()));
         items.add(new SimpleKVmodel(os.OS_CODENAME,os.getCodeName()));
         items.add(new SimpleKVmodel(os.OS_INCREMENTAL,os.getIncremental()));
         items.add(new SimpleKVmodel(os.OS_SDK_NAME,os.getSdkName()));
